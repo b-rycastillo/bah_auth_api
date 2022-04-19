@@ -22,10 +22,12 @@ import com.webage.util.JWTHelper;
 @RestController
 @RequestMapping("/token")
 public class TokenAPI {
+	
+	String dataApiHost = "localhost:8080";
 
 	//private static Key key = AuthFilter.key;	
 	public static Token appUserToken;
-	String dataApiHost = "localhost:8080";
+	
 	@GetMapping
 	public String getAll() {
 		return "jwt-fake-token-asdfasdfasfa".toString();
